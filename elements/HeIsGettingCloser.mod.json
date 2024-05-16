@@ -5,7 +5,7 @@
     "name": "He Is Getting Closer",
     "rarity": "EPIC",
     "texture": "heisgettingcloser",
-    "description": "R̸̢̛͉̜̣̙͉̪͈̟̰̻̱͈̬̞̣̬̳̗̤̬̲̥͍̺͆͒̅̇͑͆͊̊̐͆́͆̆̈́͐̓͊͂͌͗̀̉͛̎̈̋̿u̵̢̢̨̫̥̣͎̜͙̫̼͔͕͓̼̺̬͇̔̓̍̔̽̓́̈́̌̉͗̀̌͋́̏͋̑̕͘͝͝ͅn̴̡̛̛̬̫͚̣̗̞͇͇͓̲̻̻͖̫͔̗̘̹̓͌̀̈́͌͑̽́̍́̊̄̍̄̈́̈́̉̀̿́͑̂̚͠ͅ",
+    "description": "RUN!",
     "creativeTab": {
       "value": "TOOLS"
     },
@@ -18,7 +18,7 @@
     "music": {
       "value": "CUSTOM:music10"
     },
-    "lengthInTicks": 100,
-    "analogOutput": 0
+    "lengthInTicks": 72000,
+    "analogOutput": 13
   }
 }

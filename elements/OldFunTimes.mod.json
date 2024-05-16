@@ -18,7 +18,7 @@
     "music": {
       "value": "CUSTOM:music1"
     },
-    "lengthInTicks": 100,
+    "lengthInTicks": 72000,
     "analogOutput": 4
   }
 }

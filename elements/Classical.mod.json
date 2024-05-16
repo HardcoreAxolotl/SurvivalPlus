@@ -5,7 +5,7 @@
     "name": "Classical 1",
     "rarity": "COMMON",
     "texture": "classical",
-    "description": "What a Classy music ",
+    "description": "What a Classy Music ",
     "creativeTab": {
       "value": "TOOLS"
     },
@@ -18,7 +18,7 @@
     "music": {
       "value": "CUSTOM:music7"
     },
-    "lengthInTicks": 100,
-    "analogOutput": 0
+    "lengthInTicks": 72000,
+    "analogOutput": 12
   }
 }

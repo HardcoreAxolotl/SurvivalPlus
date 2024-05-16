@@ -9,6 +9,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 public class RingingBellsItem extends RecordItem {
 	public RingingBellsItem() {
-		super(0, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("survivalplus:music9")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 100);
+		super(11, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("survivalplus:music9")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 72000);
 	}
 }

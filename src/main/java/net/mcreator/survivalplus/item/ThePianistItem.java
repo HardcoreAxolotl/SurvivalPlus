@@ -9,6 +9,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 public class ThePianistItem extends RecordItem {
 	public ThePianistItem() {
-		super(0, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("survivalplus:music3")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 100);
+		super(2, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("survivalplus:music3")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 72000);
 	}
 }

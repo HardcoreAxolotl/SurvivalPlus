@@ -9,6 +9,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 public class WaitingRoomItem extends RecordItem {
 	public WaitingRoomItem() {
-		super(0, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("survivalplus:music6")), new Item.Properties().stacksTo(1).rarity(Rarity.COMMON), 100);
+		super(9, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("survivalplus:music6")), new Item.Properties().stacksTo(1).rarity(Rarity.COMMON), 72000);
 	}
 }

@@ -9,6 +9,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 public class Classical2Item extends RecordItem {
 	public Classical2Item() {
-		super(0, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("survivalplus:music8")), new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 100);
+		super(7, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("survivalplus:music8")), new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 72000);
 	}
 }
