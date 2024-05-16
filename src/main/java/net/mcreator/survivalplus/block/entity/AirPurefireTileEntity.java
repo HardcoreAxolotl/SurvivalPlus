@@ -151,8 +151,6 @@ public class AirPurefireTileEntity extends RandomizableContainerBlockEntity impl
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
-		if (index == 0)
-			return false;
 		return true;
 	}
 
