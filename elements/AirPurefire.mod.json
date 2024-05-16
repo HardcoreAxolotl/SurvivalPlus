@@ -101,7 +101,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "hasInventory": true,
+    "hasInventory": false,
     "guiBoundTo": "AirPurefierGUI",
     "openGUIOnRightClick": true,
     "inventorySize": 0,

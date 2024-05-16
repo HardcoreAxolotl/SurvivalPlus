@@ -38,7 +38,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "onSlotChanged": {
             "name": "AirPurefireOnBlockRightClicked"
           },

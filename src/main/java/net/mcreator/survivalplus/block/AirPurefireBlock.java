@@ -23,7 +23,6 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.Containers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
@@ -33,7 +32,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.survivalplus.world.inventory.AirPurefierGUIMenu;
 import net.mcreator.survivalplus.procedures.AirPurefireOnBlockRightClickedProcedure;
 import net.mcreator.survivalplus.init.SurvivalplusModBlockEntities;
-import net.mcreator.survivalplus.block.entity.AirPurefireTileEntity;
 
 import javax.annotation.Nullable;
 
@@ -125,44 +123,5 @@ public class AirPurefireBlock extends BaseEntityBlock implements EntityBlock {
 
 		AirPurefireOnBlockRightClickedProcedure.execute(entity);
 		return InteractionResult.SUCCESS;
-	}
-
-	@Override
-	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
-		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
-		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
-	}
-
-	@Override
-	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
-		super.triggerEvent(state, world, pos, eventID, eventParam);
-		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
-	}
-
-	@Override
-	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
-		if (state.getBlock() != newState.getBlock()) {
-			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof AirPurefireTileEntity be) {
-				Containers.dropContents(world, pos, be);
-				world.updateNeighbourForOutputSignal(pos, this);
-			}
-			super.onRemove(state, world, pos, newState, isMoving);
-		}
-	}
-
-	@Override
-	public boolean hasAnalogOutputSignal(BlockState state) {
-		return true;
-	}
-
-	@Override
-	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
-		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof AirPurefireTileEntity be)
-			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
-		else
-			return 0;
 	}
 }
