@@ -1,10 +1,29 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "OakHouseBuilder",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_house_builder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survivalplus/models/block/oak_house_builder.json",
+          "src/main/resources/assets/survivalplus/blockstates/oak_house_builder.json",
+          "src/main/java/net/mcreator/survivalplus/block/OakHouseBuilderBlock.java",
+          "src/main/resources/data/survivalplus/loot_tables/blocks/oak_house_builder.json",
+          "src/main/resources/assets/survivalplus/models/item/oak_house_builder.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.survivalplus.oak_house_builder": "Oak House Builder"
+    }
   },
   "foldersRoot": {
     "name": "~",
