@@ -13,11 +13,13 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.survivalplus.block.display.AirPurefireDisplayItem;
 import net.mcreator.survivalplus.SurvivalplusMod;
 
 public class SurvivalplusModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(BuiltInRegistries.ITEM, SurvivalplusMod.MODID);
 	public static final DeferredHolder<Item, Item> OAK_HOUSE_BUILDER = block(SurvivalplusModBlocks.OAK_HOUSE_BUILDER);
+	public static final DeferredHolder<Item, Item> AIR_PUREFIRE = REGISTRY.register(SurvivalplusModBlocks.AIR_PUREFIRE.getId().getPath(), () -> new AirPurefireDisplayItem(SurvivalplusModBlocks.AIR_PUREFIRE.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,7 @@
+
+{
+  "parent": "survivalplus:displaysettings/purefire.item",
+  "textures": {
+    "particle": "survivalplus:block/texture"
+  }
+}

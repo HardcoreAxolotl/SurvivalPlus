@@ -21,6 +21,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.survivalplus.init.SurvivalplusModTabs;
 import net.mcreator.survivalplus.init.SurvivalplusModItems;
 import net.mcreator.survivalplus.init.SurvivalplusModBlocks;
+import net.mcreator.survivalplus.init.SurvivalplusModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -41,7 +42,7 @@ public class SurvivalplusMod {
 		modEventBus.addListener(this::registerNetworking);
 
 		SurvivalplusModBlocks.REGISTRY.register(modEventBus);
-
+		SurvivalplusModBlockEntities.REGISTRY.register(modEventBus);
 		SurvivalplusModItems.register(modEventBus);
 
 		SurvivalplusModTabs.REGISTRY.register(modEventBus);

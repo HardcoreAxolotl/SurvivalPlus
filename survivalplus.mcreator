@@ -3,6 +3,7 @@
     {
       "name": "OakHouseBuilder",
       "type": "block",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oak_house_builder",
@@ -15,6 +16,47 @@
           "src/main/resources/assets/survivalplus/models/item/oak_house_builder.json"
         ]
       }
+    },
+    {
+      "name": "AirPurefireOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_purefire_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/procedures/AirPurefireOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirPurefire",
+      "type": "animatedblock",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_purefire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/block/model/AirPurefireBlockModel.java",
+          "src/main/java/net/mcreator/survivalplus/block/renderer/AirPurefireDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/survivalplus/block/renderer/AirPurefireTileRenderer.java",
+          "src/main/java/net/mcreator/survivalplus/block/display/AirPurefireDisplayItem.java",
+          "src/main/java/net/mcreator/survivalplus/block/entity/AirPurefireTileEntity.java",
+          "src/main/resources/assets/survivalplus/models/item/air_purefire.json",
+          "src/main/resources/assets/survivalplus/models/custom/air_purefire_particle.json",
+          "src/main/java/net/mcreator/survivalplus/block/AirPurefireBlock.java",
+          "src/main/java/net/mcreator/survivalplus/block/model/AirPurefireDisplayModel.java",
+          "src/main/resources/assets/survivalplus/blockstates/air_purefire.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -22,7 +64,8 @@
   "tag_elements": {},
   "language_map": {
     "en_us": {
-      "block.survivalplus.oak_house_builder": "Oak House Builder"
+      "block.survivalplus.oak_house_builder": "Oak House Builder",
+      "block.survivalplus.air_purefire": "Air Purefire"
     }
   },
   "foldersRoot": {
