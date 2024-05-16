@@ -1,10 +1,26 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "CreativeAmulate",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_amulate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survivalplus/models/item/creative_amulate.json",
+          "src/main/java/net/mcreator/survivalplus/item/CreativeAmulateItem.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.survivalplus.creative_amulate": "Creative Amulate"
+    }
   },
   "foldersRoot": {
     "name": "~",
