@@ -1,9 +1,0 @@
-{
-  "parent": "survivalplus:custom/test_block",
-  "textures": {
-    "all": "survivalplus:block/log_oak",
-    "particle": "survivalplus:block/log_oak",
-    "0": "survivalplus:block/log_oak"
-  },
-  "render_type": "solid"
-}

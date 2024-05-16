@@ -1,99 +1,302 @@
 {
   "mod_elements": [
     {
-      "name": "OakHouseBuilder",
-      "type": "block",
+      "name": "OldFunTimes",
+      "type": "musicdisc",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "oak_house_builder",
+      "registry_name": "old_fun_times",
       "metadata": {
         "files": [
-          "src/main/resources/assets/survivalplus/models/block/oak_house_builder.json",
-          "src/main/resources/assets/survivalplus/blockstates/oak_house_builder.json",
-          "src/main/java/net/mcreator/survivalplus/block/OakHouseBuilderBlock.java",
-          "src/main/resources/data/survivalplus/loot_tables/blocks/oak_house_builder.json",
-          "src/main/resources/assets/survivalplus/models/item/oak_house_builder.json"
+          "src/main/java/net/mcreator/survivalplus/item/OldFunTimesItem.java",
+          "src/main/resources/assets/survivalplus/models/item/old_fun_times.json"
         ]
       }
     },
     {
-      "name": "AirPurefireOnBlockRightClicked",
-      "type": "procedure",
+      "name": "FunTimeOutside",
+      "type": "musicdisc",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "air_purefire_on_block_right_clicked",
+      "registry_name": "fun_time_outside",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/survivalplus/procedures/AirPurefireOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/survivalplus/models/item/fun_time_outside.json",
+          "src/main/java/net/mcreator/survivalplus/item/FunTimeOutsideItem.java"
         ]
       }
     },
     {
-      "name": "AirPurefire",
-      "type": "animatedblock",
+      "name": "ThePianist",
+      "type": "musicdisc",
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "air_purefire",
+      "registry_name": "the_pianist",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/survivalplus/block/model/AirPurefireBlockModel.java",
-          "src/main/java/net/mcreator/survivalplus/block/renderer/AirPurefireDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/survivalplus/block/renderer/AirPurefireTileRenderer.java",
-          "src/main/java/net/mcreator/survivalplus/block/display/AirPurefireDisplayItem.java",
-          "src/main/java/net/mcreator/survivalplus/block/entity/AirPurefireTileEntity.java",
-          "src/main/resources/assets/survivalplus/models/item/air_purefire.json",
-          "src/main/resources/assets/survivalplus/models/custom/air_purefire_particle.json",
-          "src/main/java/net/mcreator/survivalplus/block/AirPurefireBlock.java",
-          "src/main/java/net/mcreator/survivalplus/block/model/AirPurefireDisplayModel.java",
-          "src/main/resources/assets/survivalplus/blockstates/air_purefire.json"
+          "src/main/resources/assets/survivalplus/models/item/the_pianist.json",
+          "src/main/java/net/mcreator/survivalplus/item/ThePianistItem.java"
         ]
       }
     },
     {
-      "name": "AirPurefierGUI",
-      "type": "gui",
+      "name": "FunTime",
+      "type": "musicdisc",
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "air_purefier_gui",
+      "registry_name": "fun_time",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/survivalplus/world/inventory/AirPurefierGUIMenu.java",
-          "src/main/java/net/mcreator/survivalplus/network/AirPurefierGUISlotMessage.java",
-          "src/main/java/net/mcreator/survivalplus/client/gui/AirPurefierGUIScreen.java"
+          "src/main/java/net/mcreator/survivalplus/item/FunTimeItem.java",
+          "src/main/resources/assets/survivalplus/models/item/fun_time.json"
         ]
       }
     },
     {
-      "name": "FuelPurefire",
-      "type": "jeiinformation",
+      "name": "WaitingOutside",
+      "type": "musicdisc",
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fuel_purefire",
+      "registry_name": "waiting_outside",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/item/WaitingOutsideItem.java",
+          "src/main/resources/assets/survivalplus/models/item/waiting_outside.json"
+        ]
+      }
+    },
+    {
+      "name": "WaitingRoom",
+      "type": "musicdisc",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waiting_room",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/item/WaitingRoomItem.java",
+          "src/main/resources/assets/survivalplus/models/item/waiting_room.json"
+        ]
+      }
+    },
+    {
+      "name": "Classical",
+      "type": "musicdisc",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "classical",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/item/ClassicalItem.java",
+          "src/main/resources/assets/survivalplus/models/item/classical.json"
+        ]
+      }
+    },
+    {
+      "name": "Classical2",
+      "type": "musicdisc",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "classical_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/item/Classical2Item.java",
+          "src/main/resources/assets/survivalplus/models/item/classical_2.json"
+        ]
+      }
+    },
+    {
+      "name": "RingingBells",
+      "type": "musicdisc",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ringing_bells",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/item/RingingBellsItem.java",
+          "src/main/resources/assets/survivalplus/models/item/ringing_bells.json"
+        ]
+      }
+    },
+    {
+      "name": "HeIsGettingCloser",
+      "type": "musicdisc",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "he_is_getting_closer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/item/HeIsGettingCloserItem.java",
+          "src/main/resources/assets/survivalplus/models/item/he_is_getting_closer.json"
+        ]
+      }
+    },
+    {
+      "name": "HeIsHere",
+      "type": "musicdisc",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "he_is_here",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survivalplus/models/item/he_is_here.json",
+          "src/main/java/net/mcreator/survivalplus/item/HeIsHereItem.java"
+        ]
       }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
-  "tag_elements": {},
+  "sound_elements": [
+    {
+      "name": "music1",
+      "files": [
+        "childishly_fresh_eyes_-_the_caretaker_everywhere_at_the_end_of_time_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music2",
+      "files": [
+        "hey_kids_molina_slowed_down_perfect_loop_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music3",
+      "files": [
+        "instupendo_-_six_forty_seven_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music4",
+      "files": [
+        "poppy_playtime_ost_07_-_deep_sleep_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music5",
+      "files": [
+        "sink_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music6",
+      "files": [
+        "the_caretaker_-_its_just_a_burning_memory_2016_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music7",
+      "files": [
+        "the_caretaker_-_libets_delay_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music8",
+      "files": [
+        "the_caretaker-all_you_are_going_to_want_to_do_is_get_back_there_tuberipper.com"
+      ],
+      "category": "music",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music9",
+      "files": [
+        "yume_nikki_ost_-_pink_sea_tuberipper.com"
+      ],
+      "category": "master",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music10",
+      "files": [
+        "yume_nikki_ost_-_snow_world_tuberipper.com"
+      ],
+      "category": "master",
+      "subtitle": "Fun Music is Playing"
+    },
+    {
+      "name": "music11",
+      "files": [
+        "yume_nikki_ost_dark_water_extended_tuberipper.com"
+      ],
+      "category": "master",
+      "subtitle": "Fun Music is Playing"
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:HeIsHere",
+      "~CUSTOM:HeIsGettingCloser",
+      "~CUSTOM:RingingBells",
+      "~CUSTOM:Classical2",
+      "~CUSTOM:Classical",
+      "~CUSTOM:WaitingRoom",
+      "~CUSTOM:WaitingOutside",
+      "~CUSTOM:FunTime",
+      "~CUSTOM:ThePianist",
+      "~CUSTOM:FunTimeOutside",
+      "~CUSTOM:OldFunTimes"
+    ]
+  },
   "language_map": {
     "en_us": {
-      "block.survivalplus.oak_house_builder": "Oak House Builder",
-      "block.survivalplus.air_purefire": "Air Purefire",
-      "jei.survivalplus.fuel_purefire": "To Fuel the Purefier you need to add coal to it\n",
-      "gui.survivalplus.air_purefier_gui.label_air_purefier": "Air Purefier"
+      "item.survivalplus.classical_2.desc": "Even More Classy Then The First",
+      "item.survivalplus.waiting_room": "Waiting Room",
+      "item.survivalplus.waiting_room.desc": "Wait Please!",
+      "item.survivalplus.old_fun_times": "Old Fun Times",
+      "item.survivalplus.the_pianist": "The Pianist",
+      "item.survivalplus.he_is_getting_closer": "He Is Getting Closer",
+      "item.survivalplus.he_is_getting_closer.desc": "R̸̢̛͉̜̣̙͉̪͈̟̰̻̱͈̬̞̣̬̳̗̤̬̲̥͍̺͆͒̅̇͑͆͊̊̐͆́͆̆̈́͐̓͊͂͌͗̀̉͛̎̈̋̿u̵̢̢̨̫̥̣͎̜͙̫̼͔͕͓̼̺̬͇̔̓̍̔̽̓́̈́̌̉͗̀̌͋́̏͋̑̕͘͝͝ͅn̴̡̛̛̬̫͚̣̗̞͇͇͓̲̻̻͖̫͔̗̘̹̓͌̀̈́͌͑̽́̍́̊̄̍̄̈́̈́̉̀̿́͑̂̚͠ͅ",
+      "item.survivalplus.fun_time_outside.desc": "Fun Music to Hear With Friends Outside",
+      "item.survivalplus.old_fun_times.desc": "Fun Old Music to Hear With Old Friends",
+      "subtitles.music": "Fun Music is Playing",
+      "item.survivalplus.fun_time": "Fun Time",
+      "item.survivalplus.classical.desc": "What a Classy music ",
+      "subtitles.music4": "Fun Music is Playing",
+      "item.survivalplus.he_is_here.desc": "Hi :D",
+      "subtitles.music5": "Fun Music is Playing",
+      "subtitles.music2": "Fun Music is Playing",
+      "item.survivalplus.he_is_here": "He Is Here",
+      "subtitles.music3": "Fun Music is Playing",
+      "subtitles.music8": "Fun Music is Playing",
+      "subtitles.music9": "Fun Music is Playing",
+      "subtitles.music6": "Fun Music is Playing",
+      "subtitles.music7": "Fun Music is Playing",
+      "subtitles.music10": "Fun Music is Playing",
+      "item.survivalplus.classical_2": "Classical 2",
+      "subtitles.music11": "Fun Music is Playing",
+      "item.survivalplus.fun_time_outside": "Fun Time Outside",
+      "subtitles.music1": "Fun Music is Playing",
+      "item.survivalplus.fun_time.desc": "It Was a Great Song Before The Disk Got Destroyed",
+      "item.survivalplus.ringing_bells.desc": "Don\u0027t Worry He Will Not Kill You",
+      "item.survivalplus.classical": "Classical 1",
+      "item.survivalplus.waiting_outside": "Waiting Outside",
+      "item.survivalplus.ringing_bells": "Ringing Bells",
+      "item.survivalplus.the_pianist.desc": "R̴͖̖͝e̷͓̹͝ļ̵̟̉̈́ā̶̻͝͝ͅx̵̙̭̉ͅi̴̺̹̥̇̔n̷̩͉̓̕̕g̷̥̐͘ ̷͓̳̗̋̽P̷̹̓͜i̴͙̹͔̋a̵̖̳̟̿̈́̊n̵̼͈͗̈͘ơ̶͔̇͝ ̵̳̗̍M̶̝̥͌ū̷͈̻̑s̴̼̅̅i̸͔̙͉̽c̷̢̙͒͆̀",
+      "item.survivalplus.waiting_outside.desc": "a Fun and Relaxing Song"
     }
   },
   "foldersRoot": {

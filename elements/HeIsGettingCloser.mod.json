@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "He Is Getting Closer",
+    "rarity": "EPIC",
+    "texture": "heisgettingcloser",
+    "description": "R̸̢̛͉̜̣̙͉̪͈̟̰̻̱͈̬̞̣̬̳̗̤̬̲̥͍̺͆͒̅̇͑͆͊̊̐͆́͆̆̈́͐̓͊͂͌͗̀̉͛̎̈̋̿u̵̢̢̨̫̥̣͎̜͙̫̼͔͕͓̼̺̬͇̔̓̍̔̽̓́̈́̌̉͗̀̌͋́̏͋̑̕͘͝͝ͅn̴̡̛̛̬̫͚̣̗̞͇͇͓̲̻̻͖̫͔̗̘̹̓͌̀̈́͌͑̽́̍́̊̄̍̄̈́̈́̉̀̿́͑̂̚͠ͅ",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:music10"
+    },
+    "lengthInTicks": 100,
+    "analogOutput": 0
+  }
+}

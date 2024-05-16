@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Classical 2",
+    "rarity": "UNCOMMON",
+    "texture": "classical2",
+    "description": "Even More Classy Then The First",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:music8"
+    },
+    "lengthInTicks": 100,
+    "analogOutput": 0
+  }
+}

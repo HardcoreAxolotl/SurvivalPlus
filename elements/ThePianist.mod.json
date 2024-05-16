@@ -1,0 +1,24 @@
+{
+  "_fv": 60,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "The Pianist",
+    "rarity": "RARE",
+    "texture": "thepianist",
+    "description": "R̴͖̖͝e̷͓̹͝ļ̵̟̉̈́ā̶̻͝͝ͅx̵̙̭̉ͅi̴̺̹̥̇̔n̷̩͉̓̕̕g̷̥̐͘ ̷͓̳̗̋̽P̷̹̓͜i̴͙̹͔̋a̵̖̳̟̿̈́̊n̵̼͈͗̈͘ơ̶͔̇͝ ̵̳̗̍M̶̝̥͌ū̷͈̻̑s̴̼̅̅i̸͔̙͉̽c̷̢̙͒͆̀",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:music3"
+    },
+    "lengthInTicks": 100,
+    "analogOutput": 0
+  }
+}

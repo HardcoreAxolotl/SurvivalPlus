@@ -1,0 +1,101 @@
+{
+  "music1": {
+    "subtitle": "subtitles.music1",
+    "sounds": [
+      {
+        "name": "survivalplus:childishly_fresh_eyes_-_the_caretaker_everywhere_at_the_end_of_time_tuberipper.com",
+        "stream": true
+      }
+    ]
+  },
+  "music2": {
+    "subtitle": "subtitles.music2",
+    "sounds": [
+      {
+        "name": "survivalplus:hey_kids_molina_slowed_down_perfect_loop_tuberipper.com",
+        "stream": true
+      }
+    ]
+  },
+  "music3": {
+    "subtitle": "subtitles.music3",
+    "sounds": [
+      {
+        "name": "survivalplus:instupendo_-_six_forty_seven_tuberipper.com",
+        "stream": true
+      }
+    ]
+  },
+  "music4": {
+    "subtitle": "subtitles.music4",
+    "sounds": [
+      {
+        "name": "survivalplus:poppy_playtime_ost_07_-_deep_sleep_tuberipper.com",
+        "stream": true
+      }
+    ]
+  },
+  "music5": {
+    "subtitle": "subtitles.music5",
+    "sounds": [
+      {
+        "name": "survivalplus:sink_tuberipper.com",
+        "stream": true
+      }
+    ]
+  },
+  "music6": {
+    "subtitle": "subtitles.music6",
+    "sounds": [
+      {
+        "name": "survivalplus:the_caretaker_-_its_just_a_burning_memory_2016_tuberipper.com",
+        "stream": true
+      }
+    ]
+  },
+  "music7": {
+    "subtitle": "subtitles.music7",
+    "sounds": [
+      {
+        "name": "survivalplus:the_caretaker_-_libets_delay_tuberipper.com",
+        "stream": true
+      }
+    ]
+  },
+  "music8": {
+    "subtitle": "subtitles.music8",
+    "sounds": [
+      {
+        "name": "survivalplus:the_caretaker-all_you_are_going_to_want_to_do_is_get_back_there_tuberipper.com",
+        "stream": true
+      }
+    ]
+  },
+  "music9": {
+    "subtitle": "subtitles.music9",
+    "sounds": [
+      {
+        "name": "survivalplus:yume_nikki_ost_-_pink_sea_tuberipper.com",
+        "stream": false
+      }
+    ]
+  },
+  "music10": {
+    "subtitle": "subtitles.music10",
+    "sounds": [
+      {
+        "name": "survivalplus:yume_nikki_ost_-_snow_world_tuberipper.com",
+        "stream": false
+      }
+    ]
+  },
+  "music11": {
+    "subtitle": "subtitles.music11",
+    "sounds": [
+      {
+        "name": "survivalplus:yume_nikki_ost_dark_water_extended_tuberipper.com",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -21,8 +21,18 @@ public class SurvivalplusModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(SurvivalplusModBlocks.OAK_HOUSE_BUILDER.get().asItem());
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(SurvivalplusModItems.FUN_TIME_OUTSIDE.get());
+			tabData.accept(SurvivalplusModItems.OLD_FUN_TIMES.get());
+			tabData.accept(SurvivalplusModItems.THE_PIANIST.get());
+			tabData.accept(SurvivalplusModItems.FUN_TIME.get());
+			tabData.accept(SurvivalplusModItems.WAITING_OUTSIDE.get());
+			tabData.accept(SurvivalplusModItems.WAITING_ROOM.get());
+			tabData.accept(SurvivalplusModItems.CLASSICAL.get());
+			tabData.accept(SurvivalplusModItems.CLASSICAL_2.get());
+			tabData.accept(SurvivalplusModItems.RINGING_BELLS.get());
+			tabData.accept(SurvivalplusModItems.HE_IS_GETTING_CLOSER.get());
+			tabData.accept(SurvivalplusModItems.HE_IS_HERE.get());
 		}
 	}
 }
