@@ -57,6 +57,31 @@
           "src/main/resources/assets/survivalplus/blockstates/air_purefire.json"
         ]
       }
+    },
+    {
+      "name": "AirPurefierGUI",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_purefier_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalplus/world/inventory/AirPurefierGUIMenu.java",
+          "src/main/java/net/mcreator/survivalplus/client/gui/AirPurefierGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "FuelPurefire",
+      "type": "jeiinformation",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuel_purefire",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -65,7 +90,9 @@
   "language_map": {
     "en_us": {
       "block.survivalplus.oak_house_builder": "Oak House Builder",
-      "block.survivalplus.air_purefire": "Air Purefire"
+      "block.survivalplus.air_purefire": "Air Purefire",
+      "jei.survivalplus.fuel_purefire": "To Fuel the Purefier you need to add coal to it\n",
+      "gui.survivalplus.air_purefier_gui.label_air_purefier": "Air Purefier"
     }
   },
   "foldersRoot": {

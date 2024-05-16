@@ -19,6 +19,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.survivalplus.init.SurvivalplusModTabs;
+import net.mcreator.survivalplus.init.SurvivalplusModMenus;
 import net.mcreator.survivalplus.init.SurvivalplusModItems;
 import net.mcreator.survivalplus.init.SurvivalplusModBlocks;
 import net.mcreator.survivalplus.init.SurvivalplusModBlockEntities;
@@ -46,6 +47,8 @@ public class SurvivalplusMod {
 		SurvivalplusModItems.register(modEventBus);
 
 		SurvivalplusModTabs.REGISTRY.register(modEventBus);
+
+		SurvivalplusModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

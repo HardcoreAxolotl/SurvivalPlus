@@ -1,4 +1,6 @@
 {
   "block.survivalplus.oak_house_builder": "Oak House Builder",
-  "block.survivalplus.air_purefire": "Air Purefire"
+  "block.survivalplus.air_purefire": "Air Purefire",
+  "jei.survivalplus.fuel_purefire": "To Fuel the Purefier you need to add coal to it\n",
+  "gui.survivalplus.air_purefier_gui.label_air_purefier": "Air Purefier"
 }

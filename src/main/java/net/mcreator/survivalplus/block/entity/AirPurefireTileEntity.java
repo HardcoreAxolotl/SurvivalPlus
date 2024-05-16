@@ -15,18 +15,19 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.survivalplus.world.inventory.AirPurefierGUIMenu;
 import net.mcreator.survivalplus.init.SurvivalplusModBlockEntities;
 import net.mcreator.survivalplus.block.AirPurefireBlock;
 
@@ -34,9 +35,11 @@ import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
+import io.netty.buffer.Unpooled;
+
 public class AirPurefireTileEntity extends RandomizableContainerBlockEntity implements GeoBlockEntity, WorldlyContainer {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(0, ItemStack.EMPTY);
 	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
 
 	public AirPurefireTileEntity(BlockPos pos, BlockState state) {
@@ -123,12 +126,12 @@ public class AirPurefireTileEntity extends RandomizableContainerBlockEntity impl
 
 	@Override
 	public int getMaxStackSize() {
-		return 64;
+		return 999;
 	}
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return ChestMenu.threeRows(id, inventory);
+		return new AirPurefierGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override
@@ -148,6 +151,8 @@ public class AirPurefireTileEntity extends RandomizableContainerBlockEntity impl
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
+		if (index == 0)
+			return false;
 		return true;
 	}
 

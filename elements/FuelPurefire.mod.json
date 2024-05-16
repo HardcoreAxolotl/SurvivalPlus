@@ -1,0 +1,15 @@
+{
+  "_fv": 60,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:AirPurefire"
+      }
+    ],
+    "information": [
+      "To Fuel the Purefier you need to add coal to it",
+      ""
+    ]
+  }
+}
