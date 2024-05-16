@@ -39,6 +39,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "AirPurefireOnBlockRightClicked"
+          },
           "x": 204,
           "y": 71
         }

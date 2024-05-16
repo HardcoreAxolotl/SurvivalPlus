@@ -68,6 +68,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/survivalplus/world/inventory/AirPurefierGUIMenu.java",
+          "src/main/java/net/mcreator/survivalplus/network/AirPurefierGUISlotMessage.java",
           "src/main/java/net/mcreator/survivalplus/client/gui/AirPurefierGUIScreen.java"
         ]
       }
